@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ελληνική Κουζίνα 🧿 Greek Cuisine</title>
+    <style>
+      body {
+        background-image:linear-gradient(lightblue, white);
+        
+             }
+      h1 {
+        text-align: center;
+        text-emphasis: bold;
+        color: rgb(61, 226, 238);
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(https://cdn.britannica.com/49/1049-004-AE4BAD3E/Flag-Greece.jpg);
+        background-position-x: center;
+                box-shadow: 10px 5px 10px lightblue;
+                margin-left: 400px;
+                margin-right: 400px;
+        line-height: 2;
+              }
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(61, 226, 238);
+        background-image: url(https://cdn.britannica.com/49/1049-004-AE4BAD3E/Flag-Greece.jpg);
+        margin-left: 400px;
+        margin-right: 400px;
+        box-shadow: 10px 5px 10px lightblue;
+        line-height: 2;
+      }
+      p {
+        color: navy;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 10px solid navy;
+        border-radius: 10% 2% 10% 2%;
+        border-spacing: 50px;  
+        padding: 10px 50px 10px 50px;
+             box-shadow: 10px 5px 10px lightblue;
+             margin-left: 400px;
+             margin-right: 400px;
+      }
+      img {
+        display: block;
+  margin: 0 auto;
+        border: 5px solid navy;
+        border-radius: 10px; 
+      }
+  
+.sendButton {
+    display: block;
+  margin: 0 auto;
+ color: white;
+  background: navy;
+  font-weight: bolder;
+  font-size: larger;
+   border: 3px solid navy;
+  border-radius: 10px; 
+  padding: 10px 50px 10px 50px;
+  transition: all 200ms ease-in-out;
+}
+button:hover{
+  background: white;
+  color: navy;
+  cursor: pointer;
+}
+.codedby {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  line-height: 2;
+  text-align: center;
+  }
+         </style>
+      </head>
+        <body>
+
+          
+    <h1>Ελληνική Κουζίνα 🧿</h1>
+    <h2>Greek Cuisine</h2>
+    <p class="information">
+      Greek cuisine (Greek: Ελληνική Κουζίνα) is the cuisine of Greece and the
+      Greek diaspora. In common with many other cuisines of the Mediterranean,
+      it is founded on the triad of
+      <strong>wheat, olive oil, and wine</strong>. It uses
+      <strong>vegetables, olive oil, grains, fish, and meat,</strong> including
+      pork, poultry, veal and beef, lamb, rabbit, and goat. Other important
+      ingredients include <strong>pasta </strong> (for example hilopites),
+      <strong>cheeses, lemon juice, herbs, olives, and yogurt</strong>. Bread
+      made of <strong>wheat</strong> is ubiquitous; other
+      <strong>grains</strong>, notably <strong>barley</strong>, are also used,
+      especially for paximathia.
+      <br />
+      <br />
+      <img
+        src="https://media.istockphoto.com/photos/middle-eastern-arabic-or-mediterranean-dinner-table-with-grilled-lamb-picture-id950253138?k=20&m=950253138&s=612x612&w=0&h=pAnwt_11cC1DCldEvOvlHpvrNMu-TjwZViDUBvhWAAc="
+        alt="Greek food"
+        width="400"
+              />
+      </p>
+      <span>
+          <p class="dessert">
+        
+        Common dessert ingredients include
+      <strong> nuts, honey, fruits, and filo pastries</strong>. It continues
+      traditions from Ancient Greek and Byzantine cuisine, while incorporating
+      Balkan, Italian and Ottoman Turkish influences.
+      <br />
+      <br />
+   
+      <img
+        src="https://cdn1.matadornetwork.com/blogs/1/2018/06/Kataifi.jpg"
+        alt="Kataifi"
+        width="400"
+              />  
+              <br />          
+      Kataifi, a popular Greek dessert similar to baklava  
+         </p> 
+        </span>
+   
+     <span>
+      <p class="studies">
+               
+          According to studies, the ingredients used in Greek cuisine mean that it
+      is one of <em>the</em> healthiest diets in the world. Following a
+      Mediterranean diet like the Greek diet can help with weight loss, as well
+      as reduce the risk of health problems such as high blood pressure and
+      diseases like diabetes, Parkinson's and Alzheimer's disease.
+     
+  <br>
+  <br>
+    <a class="readmore">
+      <a href="https://en.wikipedia.org/wiki/Greek_cuisine" target="_blank">
+        Read more on Wikipedia
+    </a>
+     
+               <br />
+    <br />
+   <strong>Want to cook a Greek dish? <br /> Click the button below to get a recipe by email!</strong> 
+       <br />
+       <br />
+    <button class="sendButton">Send me a recipe!</button>
+    
+
+     </span>
+
+  </p>
+          
+    <hr />
+    
+      <div class="codedby">  Coded by Stephanie Forbes </div>
+    
+
+  
+  
+  <script>
+function recipeRequest ( ) {
+   let name = prompt("What is your name?");
+     let emailRequest = prompt("Hello, " + name + "! would you like a recipe by email?");
+    if (emailRequest === "Yes") {
+      alert("Thank you! You will get your recipe soon!");
+    } else {
+      alert("No problem, thanks for visiting!");
+    }
+
+}
+
+let sendButton = document.querySelector("button");
+
+sendButton.addEventListener("click", recipeRequest);     
+   
+    
+    
+      </script>
+</body>
+</html>
